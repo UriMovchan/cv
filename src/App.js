@@ -1,8 +1,9 @@
 import jsPDF from "jspdf";
 import { useState } from "react";
 
+import Sidebar from "components/Sidebar";
 import Header from "components/Header";
-import Sidebar from "components/Sidebar/Sidebar";
+import Main from "components/Main";
 
 import { ReactComponent as ShareIcon } from "images/share.svg";
 
@@ -35,9 +36,10 @@ function App() {
 
       <div ref={resolve => setPageRef(resolve)} className="page">
         <Sidebar />
-        <>
+        <div className="pageContent">
           <Header />
-        </>
+          <Main />
+        </div>
       </div>
     </div>
   );

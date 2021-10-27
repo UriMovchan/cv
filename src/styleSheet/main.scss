@@ -7,6 +7,16 @@
   }
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -20,6 +30,12 @@ body {
 header {
   width: 100%;
 }
+
+main {
+  display: flex;
+  height: 100%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -34,7 +50,16 @@ img {
   margin: 0 auto;
 }
 
+.content {
+  padding: 0 15px 0 35px;
+}
+
 .page {
   display: flex;
   padding: 15px;
+}
+
+.pageContent {
+  display: flex;
+  flex-direction: column;
 }
