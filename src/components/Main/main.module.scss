@@ -3,48 +3,82 @@
 }
 
 .about {
+  padding: 25px 15px;
   background: #fff;
+}
+
+.aboutSection {
+  &:not(:last-child) {
+    margin-bottom: 35px;
+  }
 }
 
 .aboutTitle {
   display: flex;
   align-items: center;
   margin: 0;
-  background: #3d503a8c;
+  // background: #3d503a8c;
+
+  &Name {
+    flex-grow: 1;
+    margin-left: -15px;
+    padding-left: 25px;
+    font-size: 22px;
+    background: #3d503a8c;
+  }
 }
 
 .aboutIcoBox {
+  z-index: 1;
   display: flex;
   align-items: center;
-  margin-right: 10px;
-  padding: 3px 15px 3px 5px;
-  border-radius: 0 45% 45% 0;
+  justify-content: center;
+  width: 37px;
+  height: 37px;
+  border: 2px solid #000;
+  border-radius: 50%;
   background: #fff;
-
-  //   &::after {
-  //     display: block;
-  //     width: 3px;
-  //     height: 100%;
-  //     background: #000;
-  //   }
 }
 
 .aboutIcon {
-  width: 30px;
-  height: 30px;
-  padding: 5px 1px;
-  border: 2px solid #000;
-  border-radius: 50%;
+  &User {
+    padding: 6px;
+  }
+
+  &Briefcase {
+    padding: 5px;
+  }
+
+  &Code,
+  &Graduation {
+    padding: 4px;
+  }
 }
 
 .aboutTextBox {
   margin: 0;
-  margin-top: -1px;
-  padding: 0 0 10px 17.5px;
+  padding-left: 16px;
 }
 
 .aboutText {
+  margin: 0;
   padding: 10px;
+  padding-left: 24px;
   border: solid #000;
   border-width: 0 0 3px 3px;
+}
+
+.aboutList {
+  margin: 0;
+  padding: 10px;
+  padding-left: 24px;
+  border: solid #000;
+  border-width: 0 0 3px 3px;
+}
+
+.aboutItem {
+  &::marker {
+    font-size: 35px;
+    left: 0;
+  }
 }

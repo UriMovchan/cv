@@ -1,27 +1,15 @@
 import jsPDF from "jspdf";
 import { useState } from "react";
 
-import Sidebar from "components/Sidebar";
-import Header from "components/Header";
-import Main from "components/Main";
-
 import { ReactComponent as ShareIcon } from "images/share.svg";
 
 import stl from "styleSheet/app.module.scss";
-import { useReactToPrint } from "react-to-print";
+import ReactToPrint, { useReactToPrint } from "react-to-print";
 
-const savePdf = ref => {
-  const doc = new jsPDF();
-  doc.html("<div>111</div>", {
-    callback: function (doc) {
-      doc.save();
-    },
-  });
+import Summary from "pages";
+import Pdf from "components/Pdf";
 
-  doc.save();
-};
-
-function App() {
+export default function App() {
   const [pageRef, setPageRef] = useState();
 
   const handlePrint = useReactToPrint({
@@ -33,16 +21,14 @@ function App() {
       <button className={stl.shareBtn} onClick={handlePrint}>
         <ShareIcon className={stl.shareIcon} />
       </button>
+      <ReactToPrint
+        content={() => pageRef}
+        trigger={() => (
+          <button className="btn btn-primary">Print to PDF!</button>
+        )}
+      />
 
-      <div ref={resolve => setPageRef(resolve)} className="page">
-        <Sidebar />
-        <div className="pageContent">
-          <Header />
-          <Main />
-        </div>
-      </div>
+      <Summary setPageRef={setPageRef} />
     </div>
   );
 }
-
-export default App;
