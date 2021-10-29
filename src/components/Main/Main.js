@@ -77,8 +77,22 @@ export default function Main() {
           </h2>
           <div className={stl.aboutTextBox}>
             <ul className={stl.aboutList}>
-              <li className={stl.aboutItem}>pr 1</li>
-              <li className={stl.aboutItem}>pr 2</li>
+              <li className={stl.aboutItem}>
+                <div className={stl.aboutItemEducation}>
+                  <p className={stl.educationEar}>2006 - 2011</p>
+                  <p className={stl.educationPlace}>
+                    <span className={stl.university}>
+                      Taras Shevchenko National University of Kyiv
+                    </span>
+                    <span className={stl.profession}>
+                      Master of Philosophy, specialty political science
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li className={`${stl.aboutItem} ${stl.aboutItemAdditional}`}>
+                ADDITIONAL EDUCATION
+              </li>
               <li className={stl.aboutItem}>pr 3</li>
             </ul>
           </div>

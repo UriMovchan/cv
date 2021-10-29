@@ -63,7 +63,7 @@
 .aboutText {
   margin: 0;
   padding: 10px;
-  padding-left: 24px;
+  padding-left: 22px;
   border: solid #000;
   border-width: 0 0 3px 3px;
 }
@@ -71,7 +71,7 @@
 .aboutList {
   margin: 0;
   padding: 10px;
-  padding-left: 24px;
+  padding-left: 22px;
   border: solid #000;
   border-width: 0 0 3px 3px;
 }
@@ -80,5 +80,42 @@
   &::marker {
     font-size: 35px;
     left: 0;
+  }
+
+  &Education {
+    display: flex;
+  }
+}
+
+.educationEar {
+  margin: 0 15px 0 0;
+  padding: 0;
+  font-weight: 600;
+}
+
+.educationPlace {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.university {
+  font-weight: 600;
+}
+
+.profession {
+  padding-left: 5px;
+  color: #222222bb;
+  font-size: 14px;
+}
+
+.aboutItemAdditional {
+  margin: 35px 0 0;
+  font-size: 22px;
+  font-weight: 700;
+
+  &::marker {
+    content: "";
   }
 }
