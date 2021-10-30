@@ -5,6 +5,7 @@ import { ReactComponent as Envelope } from "images/envelope.svg";
 import { ReactComponent as Linkedin } from "images/linkedin.svg";
 import { ReactComponent as Github } from "images/github.svg";
 import { ReactComponent as Map } from "images/map.svg";
+import { ReactComponent as Globe } from "images/globe.svg";
 
 import stl from "./sidebar.module.scss";
 
@@ -64,7 +65,16 @@ export default function Sidebar() {
               Kyiv, Ukraine
             </a>
           </li>
-          <li className={stl.contact__item}></li>
+          <li className={stl.contact__item}>
+            <Globe className={stl.contact__icon} />
+            <a
+              href="https://urko.tech"
+              className={stl.contact__link}
+              target="__blank"
+            >
+              urko.tech
+            </a>
+          </li>
         </ul>
       </section>
 

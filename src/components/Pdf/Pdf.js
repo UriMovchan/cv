@@ -8,9 +8,8 @@ const element = (
     <body>
       <style>
         {`
-        .heading4 {
-          background: darkgreen;
-          color: white;
+        body {
+          background: #dbdbdb;
         }
         pre {
           background-color: #eee;

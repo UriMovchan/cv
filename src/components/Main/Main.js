@@ -2,6 +2,7 @@ import { ReactComponent as User } from "images/user.svg";
 import { ReactComponent as Briefcase } from "images/briefcase.svg";
 import { ReactComponent as Code } from "images/code.svg";
 import { ReactComponent as Graduation } from "images/graduation.svg";
+import { ReactComponent as Plus } from "images/plus.svg";
 
 import stl from "./main.module.scss";
 
@@ -18,13 +19,13 @@ export default function Main() {
           </h2>
           <h3 className={stl.aboutTextBox}>
             <div className={stl.aboutText}>
-              I am a Front-End developer looking for a full-time position in a
-              company that's aimed at making both everyday life and business
-              easier, more productive and user-friendly. I have sound knowledge
-              of HTML, CSS, JavaScript, and React. Also, I have hands-on
-              experience in following Agile /Scrum methodology when working in a
-              team. I am a fast learner, responsible, and ready for challenging
-              tasks.
+              I am a Front-End developer looking for a remote part-time,
+              full-time job with a flexible hours in a company that aims to make
+              everyday life and business simpler, more productive and more
+              user-friendly. I know HTML, CSS, JavaScript and React well. In
+              addition, I have practical experience using the Agile / Scrum
+              methodology while working in a team. I learn quickly, responsibly
+              and ready for difficult tasks.
             </div>
           </h3>
         </section>
@@ -38,17 +39,46 @@ export default function Main() {
           <div className={stl.aboutTextBox}>
             <ul className={stl.aboutList}>
               <li className={stl.aboutItem}>
-                BARBERSHOP, Link [HTML, SASS, JS, Parcel] A website with a
-                responsive layout. Role: Team Lead
+                <a
+                  href="https://eventbooster.urko.tech"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={stl.projectLink}
+                >
+                  EventBooster
+                </a>
+                [HTML, SASS, JS, Parcel]
+                <p className={stl.projectInfo}>
+                  A website with a responsive layout
+                </p>
               </li>
               <li className={stl.aboutItem}>
-                FILMOTEKA, Link [HTML, SASS, JS, Handlebars, REST, API, AJAX,
-                Parcel] Application for choosing a movie. Role: Scrum Master
+                <a
+                  href="https://icecream.urko.tech"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={stl.projectLink}
+                >
+                  IceCream
+                </a>
+                [HTML, SASS, JS, Parcel]
+                <p className={stl.projectInfo}>
+                  A website with a responsive layout
+                </p>
               </li>
               <li className={stl.aboutItem}>
-                PRO TEST, Link [React, Redux, Axios, Styled Components, Node.js
-                MongoDB] Application for testing knowledge of students who learn
-                QA
+                <a
+                  href="https://kapusta.urko.tech"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={stl.projectLink}
+                >
+                  Kapusta
+                </a>
+                [HTML, SASS, JS, React, NodeJs, Parcel]
+                <p className={stl.projectInfo}>
+                  A website with a responsive layout
+                </p>
               </li>
             </ul>
           </div>
@@ -62,9 +92,19 @@ export default function Main() {
           </h2>
           <div className={stl.aboutTextBox}>
             <ul className={stl.aboutList}>
-              <li className={stl.aboutItem}>pr 1</li>
-              <li className={stl.aboutItem}>pr 2</li>
-              <li className={stl.aboutItem}>pr 3</li>
+              <li className={stl.aboutItem}>
+                <div className={stl.aboutItemWork}>
+                  <p className={stl.workEar}>2010 - 2021</p>
+                  <p className={stl.work}>
+                    <span className={stl.workPlace}>Online store owner</span>
+                    <ul className={stl.workTask}>
+                      <li className={stl.taskItem}>
+                        website programming: html, css, js, php, mysql
+                      </li>
+                    </ul>
+                  </p>
+                </div>
+              </li>
             </ul>
           </div>
         </section>
@@ -91,9 +131,31 @@ export default function Main() {
                 </div>
               </li>
               <li className={`${stl.aboutItem} ${stl.aboutItemAdditional}`}>
-                ADDITIONAL EDUCATION
+                <div className={stl.additional}>
+                  <h2 className={stl.additionalTitle}>
+                    <span className={stl.additionalTitleName}>
+                      ADDITIONAL EDUCATION
+                    </span>
+                  </h2>
+                  <div className={stl.aboutTextBox}>
+                    <ul className={stl.aboutListAdditional}>
+                      <li className={stl.aboutItem}>
+                        <div className={stl.aboutItemEducation}>
+                          <p className={stl.educationEar}>2020 - 2021</p>
+                          <p className={stl.educationPlace}>
+                            <span className={stl.university}>
+                              IT School GoIT (Kyiv)
+                            </span>
+                            <span className={stl.profession}>
+                              Full Stack Developer
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </li>
-              <li className={stl.aboutItem}>pr 3</li>
             </ul>
           </div>
         </section>

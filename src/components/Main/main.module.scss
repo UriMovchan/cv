@@ -64,6 +64,9 @@
   margin: 0;
   padding: 10px;
   padding-left: 22px;
+  color: #222222ee;
+  font-size: 17px;
+  font-weight: 500;
   border: solid #000;
   border-width: 0 0 3px 3px;
 }
@@ -85,6 +88,43 @@
   &Education {
     display: flex;
   }
+  &Work {
+    display: flex;
+  }
+}
+
+.projectLink {
+  display: inline-block;
+  min-width: 100px;
+  margin: 0 9px 0 0;
+}
+
+.projectInfo {
+  margin: 0;
+  padding: 0 7px;
+  color: #222222bb;
+}
+
+.workEar {
+  margin: 0 15px 0 0;
+  padding: 0;
+  font-weight: 600;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.workPlace {
+  font-weight: 600;
+}
+
+.workTask {
+  padding-left: 25px;
+  color: #222222bb;
 }
 
 .educationEar {
@@ -110,10 +150,46 @@
   font-size: 14px;
 }
 
+.additional {
+  padding-left: 20px;
+}
+
+.additionalTitle {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  // background: #3d503a8c;
+
+  &Name {
+    // flex-grow: 1;
+    // margin-left: -15px;
+    // padding-left: 25px;
+    padding: 5px 10px;
+    font-size: 20px;
+    background: #000;
+    color: #fff;
+  }
+
+  &::after {
+    content: "";
+    flex-grow: 1;
+    height: 3px;
+    background: #000;
+  }
+}
+
+.aboutListAdditional {
+  margin: 0;
+  padding: 10px;
+  padding-left: 25px;
+  // border: solid #000;
+  // border-width: 0 0 3px 3px;
+}
+
 .aboutItemAdditional {
   margin: 35px 0 0;
-  font-size: 22px;
-  font-weight: 700;
+  // font-size: 22px;
+  // font-weight: 700;
 
   &::marker {
     content: "";

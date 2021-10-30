@@ -1,12 +1,6 @@
 @import "./vars";
 @import "./colors";
 
-@media print {
-  @page {
-    size: auto;
-  }
-}
-
 html {
   box-sizing: border-box;
 }
@@ -62,4 +56,10 @@ img {
 .pageContent {
   display: flex;
   flex-direction: column;
+}
+
+@media print {
+  @page {
+    size: auto;
+  }
 }
