@@ -1,5 +1,5 @@
 .contentAbout {
-  display: flex;
+  // display: flex;
 }
 
 .about {
@@ -72,7 +72,7 @@
 }
 
 .aboutList {
-  margin: 0;
+  margin: 0 0 0 16px;
   padding: 10px;
   padding-left: 22px;
   border: solid #000;
@@ -88,14 +88,14 @@
   &Education {
     display: flex;
   }
-  &Work {
-    display: flex;
-  }
+  // &Work {
+  //   display: flex;
+  // }
 }
 
 .projectLink {
   display: inline-block;
-  min-width: 100px;
+  min-width: 101px;
   margin: 0 9px 0 0;
 }
 
@@ -105,43 +105,34 @@
   color: #222222bb;
 }
 
-.workEar {
+.workEar,
+.educationEar {
+  min-width: 101px;
   margin: 0 15px 0 0;
   padding: 0;
+  font-size: 17.5px;
   font-weight: 600;
 }
 
-.work {
+.work,
+.educationPlace {
   display: flex;
-  flex-direction: column;
   margin: 0;
   padding: 0;
-}
-
-.workPlace {
-  font-weight: 600;
-}
-
-.workTask {
-  padding-left: 25px;
-  color: #222222bb;
-}
-
-.educationEar {
-  margin: 0 15px 0 0;
-  padding: 0;
-  font-weight: 600;
 }
 
 .educationPlace {
-  display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
 }
 
+.workPlace,
 .university {
-  font-weight: 600;
+  font-size: 17.5px;
+}
+
+.workTask {
+  padding: 5px 0 0 25px;
+  color: #222222bb;
 }
 
 .profession {

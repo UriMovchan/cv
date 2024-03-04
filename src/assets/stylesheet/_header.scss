@@ -36,3 +36,34 @@
     margin-left: 10px;
   }
 }
+
+.heroBtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  @media print {
+    display: none;
+  }
+}
+
+.heroShareBtn {
+  display: block;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.heroShareIcon {
+  width: 27px;
+  height: 27px;
+  fill: $textGray;
+
+  &:hover {
+    fill: $textDarkGray;
+  }
+}
